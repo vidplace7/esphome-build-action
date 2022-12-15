@@ -36,6 +36,7 @@ runs:
       run: |-
         docker run --rm \
         --workdir /github/workspace -v "$(pwd)":"/github/workspace" \
+        -v “/home/runner/work/_temp/_runner_file_commands”:“/github/file_commands” \
         -e INPUT_YAML_FILE -e HOME -e GITHUB_JOB -e GITHUB_REF \
         -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_REPOSITORY_OWNER \
         -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_ACTOR \
