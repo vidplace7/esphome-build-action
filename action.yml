@@ -39,7 +39,7 @@ runs:
         -e INPUT_YAML_FILE -e HOME -e GITHUB_JOB -e GITHUB_REF \
         -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_REPOSITORY_OWNER \
         -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_ACTOR \
-        -e GITHUB_ACTIONS=true -e CI=true \
+        -e GITHUB_ACTIONS=true -e CI=true -e GITHUB_OUTPUT \
         esphome:${{ inputs.version }} \
         ${{ inputs.yaml_file }}
 
