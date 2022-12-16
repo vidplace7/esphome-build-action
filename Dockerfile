@@ -1,6 +1,6 @@
-ARG VERSION=latest
+ARG INPUT_VERSION
 
-FROM ghcr.io/esphome/esphome:${VERSION}
+FROM ghcr.io/esphome/esphome:${INPUT_VERSION}
 
 COPY entrypoint.py /entrypoint.py
 

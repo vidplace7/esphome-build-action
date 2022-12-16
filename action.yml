@@ -21,8 +21,6 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    VERSION: ${{ inputs.version }}
   args:
     - ${{ inputs.yaml_file }}
 
