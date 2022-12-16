@@ -34,6 +34,7 @@ runs:
     - name: Build ESPHome image
       uses: docker/build-push-action@v3
       with:
+        context: /github/workspace
         load: true
         tags: esphome:${{ inputs.version }}
         build-args: VERSION=${{ inputs.version }}
